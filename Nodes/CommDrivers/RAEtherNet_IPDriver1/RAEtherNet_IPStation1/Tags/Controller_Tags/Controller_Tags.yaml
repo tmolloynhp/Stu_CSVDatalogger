@@ -1,0 +1,523 @@
+Name: Controller Tags
+Type: FolderType
+Children:
+- Name: cfgRotaryFeedback_PlattenSpacing
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "cfgRotaryFeedback_PlattenSpacing"
+- Name: cfgRotaryFeedback_Unwind
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "cfgRotaryFeedback_Unwind"
+- Name: Rotary_Position
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Rotary_Position"
+- Name: Machine1
+  Type: MachineUDT
+  DataType: MachineUDT
+  Children:
+  - Name: HMI
+    Type: HMIUDT
+    DataType: HMIUDT
+    Children:
+    - Name: FaultCode
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Machine1.HMI.FaultCode"
+    - Name: MachineName
+      Type: RAEtherNetIPTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Machine1.HMI.MachineName"
+- Name: Machine2
+  Type: MachineUDT
+  DataType: MachineUDT
+  Children:
+  - Name: HMI
+    Type: HMIUDT
+    DataType: HMIUDT
+    Children:
+    - Name: FaultCode
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Machine2.HMI.FaultCode"
+    - Name: MachineName
+      Type: RAEtherNetIPTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Machine2.HMI.MachineName"
+- Name: Machine3
+  Type: MachineUDT
+  DataType: MachineUDT
+  Children:
+  - Name: HMI
+    Type: HMIUDT
+    DataType: HMIUDT
+    Children:
+    - Name: FaultCode
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Machine3.HMI.FaultCode"
+    - Name: MachineName
+      Type: RAEtherNetIPTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Machine3.HMI.MachineName"
+- Name: Sequence
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Sequence"
+  - Name: @Alarms
+    Type: FolderType
+    ReferenceType: HasTagChild
+    Children:
+    - Name: sequence_alarm
+      Type: ALARM_CONDITION
+      DataType: ALARM_CONDITION
+      Children:
+      - Name: InFault
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.InFault"
+      - Name: Condition
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Condition"
+      - Name: AckRequired
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.AckRequired"
+      - Name: Latched
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Latched"
+      - Name: ProgAck
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ProgAck"
+      - Name: OperAck
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperAck"
+      - Name: ProgReset
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ProgReset"
+      - Name: OperReset
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperReset"
+      - Name: ProgSuppress
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ProgSuppress"
+      - Name: OperSuppress
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperSuppress"
+      - Name: ProgUnsuppress
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ProgUnsuppress"
+      - Name: OperUnsuppress
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperUnsuppress"
+      - Name: OperShelve
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperShelve"
+      - Name: ProgUnshelve
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ProgUnshelve"
+      - Name: OperUnshelve
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperUnshelve"
+      - Name: ProgDisable
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ProgDisable"
+      - Name: OperDisable
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperDisable"
+      - Name: ProgEnable
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ProgEnable"
+      - Name: OperEnable
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OperEnable"
+      - Name: AlarmCountReset
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.AlarmCountReset"
+      - Name: Limit
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Limit"
+      - Name: Severity
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Severity"
+      - Name: OnDelay
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OnDelay"
+      - Name: OffDelay
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.OffDelay"
+      - Name: ShelveDuration
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ShelveDuration"
+      - Name: MaxShelveDuration
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.MaxShelveDuration"
+      - Name: Deadband
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Deadband"
+      - Name: InAlarm
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.InAlarm"
+      - Name: Acked
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Acked"
+      - Name: InAlarmUnack
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.InAlarmUnack"
+      - Name: Suppressed
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Suppressed"
+      - Name: Shelved
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Shelved"
+      - Name: Disabled
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Disabled"
+      - Name: Used
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Used"
+      - Name: AlarmCount
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.AlarmCount"
+      - Name: InAlarmTime
+        Type: RAEtherNetIPTag
+        DataType: Int64
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.InAlarmTime"
+      - Name: AckTime
+        Type: RAEtherNetIPTag
+        DataType: Int64
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.AckTime"
+      - Name: RetToNormalTime
+        Type: RAEtherNetIPTag
+        DataType: Int64
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.RetToNormalTime"
+      - Name: AlarmCountResetTime
+        Type: RAEtherNetIPTag
+        DataType: Int64
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.AlarmCountResetTime"
+      - Name: ShelveTime
+        Type: RAEtherNetIPTag
+        DataType: Int64
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.ShelveTime"
+      - Name: UnshelveTime
+        Type: RAEtherNetIPTag
+        DataType: Int64
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.UnshelveTime"
+      - Name: Status
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Status"
+      - Name: AlarmFault
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.AlarmFault"
+      - Name: InFaulted
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.InFaulted"
+      - Name: SeverityInv
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.SeverityInv"
+      - Name: LimitInv
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.LimitInv"
+      - Name: DeadbandInv
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.DeadbandInv"
+      - Name: Overflow
+        Type: RAEtherNetIPTag
+        DataType: Boolean
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Sequence.@Alarms.sequence_alarm.Overflow"
+- Name: BatchID
+  Type: RAEtherNetIPTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "BatchID"
+- Name: DatabridgeTest
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DatabridgeTest"
+- Name: testsequence
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "testsequence"

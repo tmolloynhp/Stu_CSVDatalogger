@@ -1,0 +1,323 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: MachineUDT
+  Id: g=198eab0c3fc1d4b3d0db2b7b44612687
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "MachineUDT",
+    "DataType": {
+     "IdType": 2,
+     "Id": "198eab0c3fc1d4b3d0db2b7b44612687",
+     "Namespace": 22
+    },
+    "Fields": [{
+      "Name": "HMI",
+      "DataType": {
+       "IdType": 2,
+       "Id": "da1bc39a7a6ec51d65c916f38a070f85",
+       "Namespace": 22
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"MachineUDT"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: HMIUDT
+  Id: g=da1bc39a7a6ec51d65c916f38a070f85
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "HMIUDT",
+    "DataType": {
+     "IdType": 2,
+     "Id": "da1bc39a7a6ec51d65c916f38a070f85",
+     "Namespace": 22
+    },
+    "Fields": [{
+      "Name": "FaultCode",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "MachineName",
+      "DataType": {
+       "Id": 12
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"HMIUDT"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: ALARM_CONDITION
+  Id: g=1b69dada37978872bf4771c5563db9a6
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "ALARM_CONDITION",
+    "DataType": {
+     "IdType": 2,
+     "Id": "1b69dada37978872bf4771c5563db9a6",
+     "Namespace": 22
+    },
+    "Fields": [{
+      "Name": "InFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Condition",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AckRequired",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Latched",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AlarmCountReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Limit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Severity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "OnDelay",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "OffDelay",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "MaxShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Deadband",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "InAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Acked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Suppressed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Shelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Disabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Used",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "InAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "AckTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "RetToNormalTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "AlarmCountResetTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ShelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "UnshelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "AlarmFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SeverityInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LimitInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DeadbandInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Overflow",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"ALARM_CONDITION"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
